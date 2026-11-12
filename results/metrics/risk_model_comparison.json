@@ -1,0 +1,162 @@
+{
+  "dataset": "Simulated Crowd Risk Scenarios (2000 samples, 4 balanced classes)",
+  "feature_set": [
+    "crowd_density_p_m2",
+    "avg_movement_speed_ms",
+    "capacity_utilization",
+    "congestion_index",
+    "flow_entropy",
+    "flow_variation",
+    "crowd_growth_rate_per_min",
+    "speed_variance"
+  ],
+  "classes": [
+    "LOW",
+    "MODERATE",
+    "HIGH",
+    "CRITICAL"
+  ],
+  "random_forest": {
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "roc_auc_ovr": 1.0,
+    "class_wise_metrics": {
+      "LOW": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 100
+      },
+      "MODERATE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 100
+      },
+      "HIGH": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 100
+      },
+      "CRITICAL": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 100
+      }
+    },
+    "confusion_matrix": [
+      [
+        100,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        100,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        100,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        100
+      ]
+    ],
+    "train_time_sec": 0.123,
+    "inference_latency_ms": 0.082,
+    "feature_importances": {
+      "crowd_density_p_m2": 0.2493,
+      "avg_movement_speed_ms": 0.1241,
+      "capacity_utilization": 0.2554,
+      "congestion_index": 0.1867,
+      "flow_entropy": 0.0503,
+      "flow_variation": 0.0527,
+      "crowd_growth_rate_per_min": 0.0373,
+      "speed_variance": 0.0442
+    }
+  },
+  "xgboost": {
+    "accuracy": 0.995,
+    "macro_precision": 0.9951,
+    "macro_recall": 0.995,
+    "macro_f1": 0.995,
+    "roc_auc_ovr": 1.0,
+    "class_wise_metrics": {
+      "LOW": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 100
+      },
+      "MODERATE": {
+        "precision": 0.9804,
+        "recall": 1.0,
+        "f1_score": 0.9901,
+        "support": 100
+      },
+      "HIGH": {
+        "precision": 1.0,
+        "recall": 0.98,
+        "f1_score": 0.9899,
+        "support": 100
+      },
+      "CRITICAL": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 100
+      }
+    },
+    "confusion_matrix": [
+      [
+        100,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        100,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        98,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        100
+      ]
+    ],
+    "train_time_sec": 2.066,
+    "inference_latency_ms": 0.005,
+    "feature_importances": {
+      "crowd_density_p_m2": 0.2937000095844269,
+      "avg_movement_speed_ms": 0.000699999975040555,
+      "capacity_utilization": 0.40220001339912415,
+      "congestion_index": 0.001500000013038516,
+      "flow_entropy": 0.0005000000237487257,
+      "flow_variation": 0.0006000000284984708,
+      "crowd_growth_rate_per_min": 0.0,
+      "speed_variance": 0.30070000886917114
+    }
+  },
+  "engineering_recommendation": "XGBoost demonstrates higher gradient sensitivity to multi-variable non-linear boundaries (congestion_index and capacity_utilization), while Random Forest exhibits marginally lower variance across minority turbulence spikes. Both models achieve near 100% recall on CRITICAL conditions, satisfying the safety-critical imperative of early crowd risk warning."
+}

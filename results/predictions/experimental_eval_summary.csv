@@ -1,0 +1,8 @@
+Module,Model,Dataset,Primary_Metric_1,Primary_Metric_2,Primary_Metric_3,Latency_ms,FPS,Data_Type
+Module A: Person Detection,YOLOv8n,NWPU-Crowd Official Real Validation Subset (10 images),Precision=0.914,Recall=0.009,AP=0.009,312.15,3.2,Official Real Images
+Module B: Crowd Counting,CSRNet (8-epoch CPU),NWPU-Crowd Official Real Validation Subset (10 images),MAE=1039.31,RMSE=1116.62,Extreme_MAE=685.85,1300.0,0.8,Official Real Images
+Module B: Crowd Counting,YOLOv8n (Count Baseline),NWPU-Crowd Official Real Validation Subset (10 images),MAE=564.10,RMSE=1045.87,Extreme_MAE=2281.50,312.15,3.2,Official Real Images
+Module C: Person Tracking,ByteTrack (with YOLOv8),MOTSynth Video Sequences,MOTA=0.9187,IDF1=0.9681,ID_Switches=14,68.08,14.7,Synthetic Schema Video Frames (GT-box fallback)
+Module C: Flow & Segmentation,Optical Flow + Density Mask Analyzer,UCF Crowd Segmentation (Schema Samples),Samples=2,Mean_Flow_Speed=2.86,Mean_Seg_Coverage=20.9%,33.22,0.0,Synthetic Schema Samples
+Module D: Risk Classification,Random Forest Classifier,"Simulated Crowd Risk Scenarios (2000 samples, 4 balanced classes)",Acc=1.0000,Macro_F1=1.0000,CRITICAL_Recall=1.0000,0.082,12195.1,Documented Synthetic Risk Scenarios
+Module D: Risk Classification,XGBoost Classifier,"Simulated Crowd Risk Scenarios (2000 samples, 4 balanced classes)",Acc=0.9950,Macro_F1=0.9950,CRITICAL_Recall=1.0000,0.005,200000.0,Documented Synthetic Risk Scenarios

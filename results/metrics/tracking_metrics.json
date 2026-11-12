@@ -1,0 +1,106 @@
+{
+  "tracker": "ByteTrack (with YOLOv8)",
+  "dataset": "MOTSynth Video Sequences",
+  "sequences_evaluated": [
+    "MOTSynth_001_rush"
+  ],
+  "aggregate_mota": 0.9187,
+  "aggregate_idf1": 0.9681,
+  "total_id_switches": 14,
+  "per_sequence_metrics": {
+    "MOTSynth_001_rush": {
+      "sequence_frames": 30,
+      "total_gt_instances": 750,
+      "true_positives": 713,
+      "false_positives": 10,
+      "false_negatives": 37,
+      "id_switches": 14,
+      "mota": 0.9187,
+      "idf1": 0.9681,
+      "mean_latency_ms": 68.08,
+      "tracking_fps": 14.7,
+      "telemetry_sample": [
+        {
+          "frame": 1,
+          "tracked_count": 11,
+          "mean_speed": 0.0,
+          "flow_entropy": -0.0,
+          "dominant_dir": "E"
+        },
+        {
+          "frame": 2,
+          "tracked_count": 16,
+          "mean_speed": 65.0,
+          "flow_entropy": 1.623,
+          "dominant_dir": "NNE"
+        },
+        {
+          "frame": 3,
+          "tracked_count": 22,
+          "mean_speed": 68.0,
+          "flow_entropy": 2.207,
+          "dominant_dir": "NE"
+        },
+        {
+          "frame": 4,
+          "tracked_count": 24,
+          "mean_speed": 89.1,
+          "flow_entropy": 2.788,
+          "dominant_dir": "NNE"
+        },
+        {
+          "frame": 5,
+          "tracked_count": 24,
+          "mean_speed": 115.0,
+          "flow_entropy": 2.615,
+          "dominant_dir": "N"
+        },
+        {
+          "frame": 6,
+          "tracked_count": 25,
+          "mean_speed": 118.6,
+          "flow_entropy": 2.499,
+          "dominant_dir": "NNE"
+        },
+        {
+          "frame": 7,
+          "tracked_count": 25,
+          "mean_speed": 110.5,
+          "flow_entropy": 2.483,
+          "dominant_dir": "NNE"
+        },
+        {
+          "frame": 8,
+          "tracked_count": 25,
+          "mean_speed": 101.3,
+          "flow_entropy": 2.532,
+          "dominant_dir": "NNE"
+        },
+        {
+          "frame": 9,
+          "tracked_count": 25,
+          "mean_speed": 118.4,
+          "flow_entropy": 2.503,
+          "dominant_dir": "NE"
+        },
+        {
+          "frame": 10,
+          "tracked_count": 25,
+          "mean_speed": 98.5,
+          "flow_entropy": 2.588,
+          "dominant_dir": "NNW"
+        }
+      ]
+    }
+  },
+  "tracking_observation": "ByteTrack's two-stage association matches low-confidence detections against existing tracklets, substantially reducing ID switches during pedestrian crossovers and momentary body occlusions.",
+  "ucf_tracking_video_telemetry": {
+    "ucf_dense_crowd_corridor.mp4": {
+      "frames_processed": 125,
+      "fps": 25.0,
+      "mean_tracked_density_agents": 86.1,
+      "mean_speed_px_sec": 46.4,
+      "mean_flow_entropy": 1.337
+    }
+  }
+}

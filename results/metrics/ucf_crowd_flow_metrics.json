@@ -1,0 +1,27 @@
+{
+  "dataset": "UCF Crowd Segmentation (Schema Samples)",
+  "sample_count": 2,
+  "mean_flow_magnitude_px": 2.859,
+  "mean_crowd_area_pct": 20.91,
+  "mean_latency_ms": 33.22,
+  "per_sample": [
+    {
+      "sample_name": "ucf_flow_01_corridor_bottleneck_flow.jpg",
+      "resolution": "720x480",
+      "mean_flow_magnitude_px": 2.8589999675750732,
+      "max_flow_magnitude_px": 4.336999893188477,
+      "dominant_flow_angle_deg": 89.0999984741211,
+      "crowd_segmentation_coverage_pct": 20.91,
+      "latency_ms": 49.31
+    },
+    {
+      "sample_name": "ucf_flow_02_crossroad_intersecting_flow.jpg",
+      "resolution": "720x480",
+      "mean_flow_magnitude_px": 2.8589999675750732,
+      "max_flow_magnitude_px": 4.336999893188477,
+      "dominant_flow_angle_deg": 89.0999984741211,
+      "crowd_segmentation_coverage_pct": 20.91,
+      "latency_ms": 17.12
+    }
+  ]
+}

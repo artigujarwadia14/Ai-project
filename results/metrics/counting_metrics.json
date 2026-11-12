@@ -1,0 +1,330 @@
+{
+  "models_evaluated": [
+    "CSRNet",
+    "YOLOv8n"
+  ],
+  "primary_dataset": "NWPU-Crowd Official Real Validation Subset (10 images)",
+  "total_test_samples": 10,
+  "csrnet_metrics": {
+    "mae": 1039.31,
+    "mse": 1246847.84,
+    "rmse": 1116.62,
+    "mre": 175.3722
+  },
+  "yolo_metrics": {
+    "mae": 564.1,
+    "mse": 1093835.9,
+    "rmse": 1045.87,
+    "mre": 0.5917
+  },
+  "density_stratified_comparison": {
+    "Negative": {
+      "sample_count": 2,
+      "csrnet_mae": 612.7,
+      "csrnet_rmse": 619.87,
+      "yolo_mae": 0.0,
+      "yolo_rmse": 0.0
+    },
+    "Low": {
+      "sample_count": 2,
+      "csrnet_mae": 1036.9,
+      "csrnet_rmse": 1040.11,
+      "yolo_mae": 1.0,
+      "yolo_rmse": 1.0
+    },
+    "Medium": {
+      "sample_count": 2,
+      "csrnet_mae": 1567.25,
+      "csrnet_rmse": 1597.03,
+      "yolo_mae": 39.0,
+      "yolo_rmse": 39.62
+    },
+    "High": {
+      "sample_count": 2,
+      "csrnet_mae": 1293.85,
+      "csrnet_rmse": 1321.83,
+      "yolo_mae": 499.0,
+      "yolo_rmse": 499.03
+    },
+    "Extreme": {
+      "sample_count": 2,
+      "csrnet_mae": 685.85,
+      "csrnet_rmse": 685.89,
+      "yolo_mae": 2281.5,
+      "yolo_rmse": 2284.42
+    }
+  },
+  "per_sample_details": [
+    {
+      "dataset": "NWPU-Crowd (Official Real Val)",
+      "sample_name": "3126.jpg",
+      "density_category": "Extreme",
+      "ground_truth_count": 2167,
+      "csrnet_predicted_count": 1488.6,
+      "csrnet_abs_error": 678.4,
+      "csrnet_latency_ms": 1274.92,
+      "yolo_detected_count": 1,
+      "yolo_abs_error": 2166.0,
+      "yolo_latency_ms": 105.24
+    },
+    {
+      "dataset": "NWPU-Crowd (Official Real Val)",
+      "sample_name": "3143.jpg",
+      "density_category": "Negative",
+      "ground_truth_count": 0,
+      "csrnet_predicted_count": 518.7,
+      "csrnet_abs_error": 518.7,
+      "csrnet_latency_ms": 1279.55,
+      "yolo_detected_count": 0,
+      "yolo_abs_error": 0.0,
+      "yolo_latency_ms": 63.29
+    },
+    {
+      "dataset": "NWPU-Crowd (Official Real Val)",
+      "sample_name": "3150.jpg",
+      "density_category": "Negative",
+      "ground_truth_count": 0,
+      "csrnet_predicted_count": 706.7,
+      "csrnet_abs_error": 706.7,
+      "csrnet_latency_ms": 1322.51,
+      "yolo_detected_count": 0,
+      "yolo_abs_error": 0.0,
+      "yolo_latency_ms": 28.54
+    },
+    {
+      "dataset": "NWPU-Crowd (Official Real Val)",
+      "sample_name": "3154.jpg",
+      "density_category": "Low",
+      "ground_truth_count": 5,
+      "csrnet_predicted_count": 1123.5,
+      "csrnet_abs_error": 1118.5,
+      "csrnet_latency_ms": 1551.52,
+      "yolo_detected_count": 6,
+      "yolo_abs_error": 1.0,
+      "yolo_latency_ms": 59.78
+    },
+    {
+      "dataset": "NWPU-Crowd (Official Real Val)",
+      "sample_name": "3156.jpg",
+      "density_category": "Extreme",
+      "ground_truth_count": 2407,
+      "csrnet_predicted_count": 1713.7,
+      "csrnet_abs_error": 693.3,
+      "csrnet_latency_ms": 1369.27,
+      "yolo_detected_count": 10,
+      "yolo_abs_error": 2397.0,
+      "yolo_latency_ms": 41.06
+    },
+    {
+      "dataset": "NWPU-Crowd (Official Real Val)",
+      "sample_name": "3200.jpg",
+      "density_category": "Medium",
+      "ground_truth_count": 53,
+      "csrnet_predicted_count": 1927.2,
+      "csrnet_abs_error": 1874.2,
+      "csrnet_latency_ms": 1312.82,
+      "yolo_detected_count": 7,
+      "yolo_abs_error": 46.0,
+      "yolo_latency_ms": 34.86
+    },
+    {
+      "dataset": "NWPU-Crowd (Official Real Val)",
+      "sample_name": "3274.jpg",
+      "density_category": "Low",
+      "ground_truth_count": 4,
+      "csrnet_predicted_count": 959.3,
+      "csrnet_abs_error": 955.3,
+      "csrnet_latency_ms": 1341.28,
+      "yolo_detected_count": 3,
+      "yolo_abs_error": 1.0,
+      "yolo_latency_ms": 28.72
+    },
+    {
+      "dataset": "NWPU-Crowd (Official Real Val)",
+      "sample_name": "3318.jpg",
+      "density_category": "High",
+      "ground_truth_count": 504,
+      "csrnet_predicted_count": 1527.3,
+      "csrnet_abs_error": 1023.3,
+      "csrnet_latency_ms": 1291.1,
+      "yolo_detected_count": 10,
+      "yolo_abs_error": 494.0,
+      "yolo_latency_ms": 25.03
+    },
+    {
+      "dataset": "NWPU-Crowd (Official Real Val)",
+      "sample_name": "3334.jpg",
+      "density_category": "Medium",
+      "ground_truth_count": 51,
+      "csrnet_predicted_count": 1311.3,
+      "csrnet_abs_error": 1260.3,
+      "csrnet_latency_ms": 1347.36,
+      "yolo_detected_count": 19,
+      "yolo_abs_error": 32.0,
+      "yolo_latency_ms": 37.7
+    },
+    {
+      "dataset": "NWPU-Crowd (Official Real Val)",
+      "sample_name": "3468.jpg",
+      "density_category": "High",
+      "ground_truth_count": 506,
+      "csrnet_predicted_count": 2070.4,
+      "csrnet_abs_error": 1564.4,
+      "csrnet_latency_ms": 1262.5,
+      "yolo_detected_count": 2,
+      "yolo_abs_error": 504.0,
+      "yolo_latency_ms": 39.06
+    }
+  ],
+  "synthetic_schema_benchmark": {
+    "total_test_samples": 8,
+    "csrnet_metrics": {
+      "mae": 440.71,
+      "mse": 287134.83,
+      "rmse": 535.85,
+      "mre": 31.0514
+    },
+    "yolo_metrics": {
+      "mae": 725.38,
+      "mse": 1003163.62,
+      "rmse": 1001.58,
+      "mre": 0.875
+    },
+    "density_stratified_comparison": {
+      "Negative": {
+        "sample_count": 1,
+        "csrnet_mae": 225.6,
+        "csrnet_rmse": 225.6,
+        "yolo_mae": 0.0,
+        "yolo_rmse": 0.0
+      },
+      "Low": {
+        "sample_count": 1,
+        "csrnet_mae": 441.9,
+        "csrnet_rmse": 441.9,
+        "yolo_mae": 28.0,
+        "yolo_rmse": 28.0
+      },
+      "Medium": {
+        "sample_count": 1,
+        "csrnet_mae": 824.7,
+        "csrnet_rmse": 824.7,
+        "yolo_mae": 165.0,
+        "yolo_rmse": 165.0
+      },
+      "High": {
+        "sample_count": 3,
+        "csrnet_mae": 297.47,
+        "csrnet_rmse": 312.08,
+        "yolo_mae": 713.33,
+        "yolo_rmse": 737.65
+      },
+      "Extreme": {
+        "sample_count": 2,
+        "csrnet_mae": 570.55,
+        "csrnet_rmse": 734.37,
+        "yolo_mae": 1735.0,
+        "yolo_rmse": 1783.94
+      }
+    },
+    "per_sample_details": [
+      {
+        "dataset": "NWPU-Crowd (Synthetic Schema)",
+        "sample_name": "0001_empty_plaza_negative.jpg",
+        "density_category": "Negative",
+        "ground_truth_count": 0,
+        "csrnet_predicted_count": 225.6,
+        "csrnet_abs_error": 225.6,
+        "csrnet_latency_ms": 1524.14,
+        "yolo_detected_count": 0,
+        "yolo_abs_error": 0.0,
+        "yolo_latency_ms": 41.54
+      },
+      {
+        "dataset": "NWPU-Crowd (Synthetic Schema)",
+        "sample_name": "0002_street_market_low.jpg",
+        "density_category": "Low",
+        "ground_truth_count": 28,
+        "csrnet_predicted_count": 469.9,
+        "csrnet_abs_error": 441.9,
+        "csrnet_latency_ms": 1525.16,
+        "yolo_detected_count": 0,
+        "yolo_abs_error": 28.0,
+        "yolo_latency_ms": 42.94
+      },
+      {
+        "dataset": "NWPU-Crowd (Synthetic Schema)",
+        "sample_name": "0003_concert_hall_medium.jpg",
+        "density_category": "Medium",
+        "ground_truth_count": 165,
+        "csrnet_predicted_count": 989.7,
+        "csrnet_abs_error": 824.7,
+        "csrnet_latency_ms": 5206.65,
+        "yolo_detected_count": 0,
+        "yolo_abs_error": 165.0,
+        "yolo_latency_ms": 961.45
+      },
+      {
+        "dataset": "NWPU-Crowd (Synthetic Schema)",
+        "sample_name": "0004_stadium_gate_high.jpg",
+        "density_category": "High",
+        "ground_truth_count": 720,
+        "csrnet_predicted_count": 1011.8,
+        "csrnet_abs_error": 291.8,
+        "csrnet_latency_ms": 11440.36,
+        "yolo_detected_count": 0,
+        "yolo_abs_error": 720.0,
+        "yolo_latency_ms": 463.68
+      },
+      {
+        "dataset": "NWPU-Crowd (Synthetic Schema)",
+        "sample_name": "0005_pilgrimage_extreme.jpg",
+        "density_category": "Extreme",
+        "ground_truth_count": 2150,
+        "csrnet_predicted_count": 1117.1,
+        "csrnet_abs_error": 1032.9,
+        "csrnet_latency_ms": 10131.6,
+        "yolo_detected_count": 0,
+        "yolo_abs_error": 2150.0,
+        "yolo_latency_ms": 228.09
+      },
+      {
+        "dataset": "UCF-QNRF (Synthetic Schema)",
+        "sample_name": "img_0001_marathon_dense_start.jpg",
+        "density_category": "High",
+        "ground_truth_count": 480,
+        "csrnet_predicted_count": 895.8,
+        "csrnet_abs_error": 415.8,
+        "csrnet_latency_ms": 9160.62,
+        "yolo_detected_count": 0,
+        "yolo_abs_error": 480.0,
+        "yolo_latency_ms": 223.45
+      },
+      {
+        "dataset": "UCF-QNRF (Synthetic Schema)",
+        "sample_name": "img_0002_religious_rally_crowd.jpg",
+        "density_category": "High",
+        "ground_truth_count": 940,
+        "csrnet_predicted_count": 1124.8,
+        "csrnet_abs_error": 184.8,
+        "csrnet_latency_ms": 10326.02,
+        "yolo_detected_count": 0,
+        "yolo_abs_error": 940.0,
+        "yolo_latency_ms": 578.23
+      },
+      {
+        "dataset": "UCF-QNRF (Synthetic Schema)",
+        "sample_name": "img_0003_music_festival_stage.jpg",
+        "density_category": "Extreme",
+        "ground_truth_count": 1320,
+        "csrnet_predicted_count": 1211.8,
+        "csrnet_abs_error": 108.2,
+        "csrnet_latency_ms": 11509.25,
+        "yolo_detected_count": 0,
+        "yolo_abs_error": 1320.0,
+        "yolo_latency_ms": 271.46
+      }
+    ]
+  },
+  "academic_insight": "In Low-density real photographs, YOLOv8n achieves near-exact counts because individuals are separated. In High and Extreme densities (>500 persons), YOLOv8n misses over 98% of heads due to occlusion, whereas CSRNet maps spatial density directly. Note that our 8-epoch CPU-calibrated CSRNet model still shows residual background over-prediction on Negative/Low scenes; full multi-epoch GPU training on all 3,109 NWPU-Crowd training images is required for production accuracy (published CSRNet benchmark MAE: 104.89)."
+}

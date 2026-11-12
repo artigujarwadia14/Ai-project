@@ -1,0 +1,17 @@
+# Virtual environment & caches
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Large datasets & model weights (do not commit binaries to GitHub)
+datasets/
+models/**/*.pt
+models/**/*.pth
+models/**/*.joblib
+*.mp4
+*.avi
+
+# OS / Temp
+.DS_Store
+Thumbs.db
